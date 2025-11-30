@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MDA-Mask: Maximal Divergent Anchoring with Mask for Personalized Image Generation</title>
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MDA-Mask: Maximal Divergent Anchoring with Mask for Personalized Image Generation</h1>
+          <div class="is-size-5 publication-authors">
+	   <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Shilun Liu</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+            <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Yan Tian</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Ruili Wang</span><br>
+                <span class="author-school-block">Massey University</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 25%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Mahmoud Hassaballah</span><br>
+                <span class="author-school-block">Prince Sattam Bin Abdulaziz University</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Karen Egiazarian</span><br>
+                <span class="author-school-block">Tampere University</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Leszek Rutkowski</span><br>
+                <span class="author-school-block">AGH University</span>
+              </div>
+	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">Xun Wang</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://faith643.github.io/MDA-Mask"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://faith643.github.io/MDA-Mask"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          In computer vision, using custom concepts to generate images that align with user-provided personalized concepts while still maintaining a natural integration with general concepts remains a key challenge. Current approaches struggle with two critical technical bottlenecks when addressing the issue of missing general concepts during generation with custom concepts: 1) Over-constraining the custom concept results in the loss of its personalized characteristics (generalization), and 2) the interference of custom concept coding in the background area leads to the generation of general concepts being affected by custom concepts. We propose MDA-Mask, combining a maximal divergent anchoring (MDA) constraint with a background leakage suppression (BLS) mechanism. We select three concepts with the largest semantic gaps as anchors to prevent over-constraining the custom concept and enable it to learn distinctive features. Additionally, it uses a mask-guided attention mechanism to suppress background leakage and minimize encoding interference. We assess performance by combining custom and general concepts. Compared to mainstream methods, the proposed approach improves frechet inception distance (FID), text alignment, and image alignment metrics by 4.3%, 5.2%, and 3.1%, respectively, markedly enhancing concept composability.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <img src=".\static\images\method.png" alt="Description of the image">
+          </div>
+        </div>
+      </div>
+      <!--/ Method. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Example. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Example</h2>
+          <div class="content has-text-justified">
+	    <img src=".\static\images\cat.png" alt="Description of the image">
+          </div>
+        </div>
+        </div>
+      </div>
+      <!--/ Example. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Example. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <img src=".\static\images\cat and dog.png" alt="Description of the image">
+          </div>
+        </div>
+        </div>
+      </div>
+      <!--/ Example. -->
+    </div>
+  </section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+.author-block {
+    display: block; /* 确保整体为块级元素 */
+    text-align: center; /* 或 center, right */
+    margin: 20px 0;
+}
+
+.author-block strong {
+    font-weight: bold;
+    color: #333;
+}
+.author-school-block {
+  display: inline-block;
+  font-size: 13px;
+
+}
+</style>
+</body>
+</html>
+
+
