@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MDA-Mask: Maximal Divergent Anchoring with Mask for Personalized Image Generation</title>
+  <title>AGPO: Anchor-Guided Progressive Optimization for Text-to-3D Generation</title>
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -22,34 +22,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MDA-Mask: Maximal Divergent Anchoring with Mask for Personalized Image Generation</h1>
+          <h1 class="title is-1 publication-title">AGPO: Anchor-Guided Progressive Optimization for Text-to-3D Generation</h1>
           <div class="is-size-5 publication-authors">
 	   <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Shilun Liu</span><br>
+                <span class="author-name-block">Jiaheng Xu</span><br>
+                <span class="author-school-block">Zhejiang Gongshang University</span>
+              </div>
+			  <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
+                <span class="author-name-block">He Huang</span><br>
                 <span class="author-school-block">Zhejiang Gongshang University</span>
               </div>
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
                 <span class="author-name-block">Yan Tian</span><br>
-                <span class="author-school-block">Zhejiang Gongshang University</span>
-              </div>
-	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Ruili Wang</span><br>
-                <span class="author-school-block">Massey University</span>
-              </div>
-	<div class="author-block" style="display: inline-block; width: 25%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Mahmoud Hassaballah</span><br>
-                <span class="author-school-block">Prince Sattam Bin Abdulaziz University</span>
-              </div>
-	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Karen Egiazarian</span><br>
-                <span class="author-school-block">Tampere University</span>
-              </div>
-	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Leszek Rutkowski</span><br>
-                <span class="author-school-block">AGH University</span>
-              </div>
-	<div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
-                <span class="author-name-block">Xun Wang</span><br>
                 <span class="author-school-block">Zhejiang Gongshang University</span>
               </div>
           </div>
@@ -96,7 +80,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          In computer vision, using custom concepts to generate images that align with user-provided personalized concepts while still maintaining a natural integration with general concepts remains a key challenge. Current approaches struggle with two critical technical bottlenecks when addressing the issue of missing general concepts during generation with custom concepts: 1) Over-constraining the custom concept results in the loss of its personalized characteristics (generalization), and 2) the interference of custom concept coding in the background area leads to the generation of general concepts being affected by custom concepts. We propose MDA-Mask, combining a maximal divergent anchoring (MDA) constraint with a background leakage suppression (BLS) mechanism. We select three concepts with the largest semantic gaps as anchors to prevent over-constraining the custom concept and enable it to learn distinctive features. Additionally, it uses a mask-guided attention mechanism to suppress background leakage and minimize encoding interference. We assess performance by combining custom and general concepts. Compared to mainstream methods, the proposed approach improves frechet inception distance (FID), text alignment, and image alignment metrics by 4.3%, 5.2%, and 3.1%, respectively, markedly enhancing concept composability.
+          Text-to-3D aims to synthesize high-quality 3D assets from natural language prompts, yet single-stage pipelines based on 3D Gaussian Splatting (3DGS) still suffer from cross-view appearance and geometric inconsistencies, lacking a unified post-optimization mechanism. We propose AGPO (Anchor-Guided Progressive Optimization), a lightweight and training-free framework for refining existing 3DGS models. AGPO leverages geometric relationships between adjacent views to progressively expand local optimization results into globally consistent reconstructions. Through occlusion-aware reprojection and multi-view correspondence constraints, the method propagates structural and semantic consistency from anchor views to their neighboring views, achieving unified geometry and appearance. Furthermore, an Uncertainty-Aware Reweighting (UAR) mechanism adaptively adjusts pixel-level supervision based on depth consistency, effectively suppressing artifacts in occluded or uncertain regions. On LGM-initialized models, AGPO improves CLIP similarity by 6.65%, reduces multi-view LPIPS by 3.49%, and decreases reprojection MSE by 23.24%. Compared with DreamGaussian and GaussianDreamer, AGPO maintains stable geometric and appearance consistency without extra training or architectural changes. These results demonstrate that anchor-guided progressive optimization with uncertainty-aware regularization provides an effective and practical solution for enhancing multi-view consistency in Text-to-3D.
         </div>
       </div>
     </div>
@@ -197,5 +181,6 @@
 </style>
 </body>
 </html>
+
 
 
