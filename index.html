@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AGPO: Anchor-Guided Progressive Optimization for Text-to-3D Generation</title>
 
   <link rel="stylesheet" href="./css/bulma.min.css">
@@ -10,8 +12,8 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./css/index.css">
-
 </head>
+
 <body>
 
 <section class="hero">
@@ -19,7 +21,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">AGPO: Anchor-Guided Progressive Optimization for Text-to-3D Generation</h1>
+
+          <!-- Title Image -->
+          <div class="title-image-wrapper">
+            <img src="./images/title.png"
+                 alt="AGPO: Anchor-Guided Progressive Optimization for Text-to-3D Generation"
+                 class="title-image">
+          </div>
+
           <div class="is-size-5 publication-authors">
 
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
@@ -31,17 +40,17 @@
               <span class="author-name-block">Rui Zhang</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
             </div>
-            
+
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
               <span class="author-name-block">Xuran Zhao</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
             </div>
-            
+
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
               <span class="author-name-block">Tao Yang</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
             </div>
-            
+
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
               <span class="author-name-block">Yunuo Zou</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
@@ -51,7 +60,7 @@
               <span class="author-name-block">Yan Tian</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
             </div>
-            
+
             <div class="author-block" style="display: inline-block; width: 20%; vertical-align: top; margin: 1.66%;">
               <span class="author-name-block">Xun Wang</span><br>
               <span class="author-school-block">Zhejiang Gongshang University</span>
@@ -92,10 +101,14 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          Text-to-3D aims to synthesize high-quality 3D assets from natural language prompts; however, single-stage pipelines based on 3D Gaussian Splatting (3DGS) still suffer from cross-view appearance and geometric inconsistencies and lack a unified post-optimization mechanism. We propose Anchor-Guided Progressive Optimization (AGPO), a lightweight, training-free framework designed to improve cross-view consistency in text-to-3D generation. Within AGPO, Anchor-Guided Progressive Propagation (AGPP) leverages geometric relationships between adjacent views to progressively propagate reliable structural and semantic constraints across the view space, yielding globally consistent 3D reconstructions. Through occlusion-aware reprojection and multi-view correspondence constraints, AGPP enforces coherent geometry and appearance between anchor views and their neighboring views. Furthermore, an Uncertainty-Aware Reweighting (UAR) mechanism adaptively adjusts pixel-level supervision based on depth consistency, effectively suppressing artifacts in occluded or uncertain regions. Compatible with mainstream 3DGS-based text-to-3D pipelines, AGPO improves Contrastive Language--Image Pre-training (CLIP) similarity by 5.76% and reduces the reprojection mean squared error (MSE) by 22.61%. Compared with representative text-to-3D baselines, AGPO maintains stable geometric and appearance consistency without requiring additional training or architectural modifications.
+
+        <!-- Abstract Image -->
+        <div class="abstract-image-wrapper">
+          <img src="./images/abstract.png"
+               alt="Abstract"
+               class="abstract-image">
         </div>
+
       </div>
     </div>
   </div>
@@ -108,7 +121,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="./images/Method.png" alt="Method">
+          <img src="./images/Mtehod.png" alt="Method" class="method-image">
         </div>
       </div>
     </div>
@@ -141,13 +154,47 @@
 
 <style>
 .author-block {
-    display: block;
-    text-align: center;
-    margin: 20px 0;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
 }
+
 .author-school-block {
   display: inline-block;
   font-size: 13px;
+}
+
+.title-image-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 950px;
+  height: auto;
+}
+
+.abstract-image-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.abstract-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 780px;
+  height: auto;
+}
+
+.method-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 </style>
 
